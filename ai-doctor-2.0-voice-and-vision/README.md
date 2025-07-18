@@ -5,45 +5,13 @@ This guide provides step-by-step instructions to set up your project environment
 ## Table of Contents
 
 1. [Installing FFmpeg and PortAudio](#installing-ffmpeg-and-portaudio)
-   - [macOS](#macos)
-   - [Linux](#linux)
    - [Windows](#windows)
 2. [Setting Up a Python Virtual Environment](#setting-up-a-python-virtual-environment)
    - [Using Pipenv](#using-pipenv)
    - [Using pip and venv](#using-pip-and-venv)
-   - [Using Conda](#using-conda)
 3. [Running the application](#project-phases-and-python-commands)
 
 ## Installing FFmpeg and PortAudio
-
-### macOS
-
-1. **Install Homebrew** (if not already installed):
-
-   ```bash
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   ```
-
-2. **Install FFmpeg and PortAudio:**
-
-   ```bash
-   brew install ffmpeg portaudio
-   ```
-
-
-### Linux
-For Debian-based distributions (e.g., Ubuntu):
-
-1. **Update the package list**
-
-```
-sudo apt update
-```
-
-2. **Install FFmpeg and PortAudio:**
-```
-sudo apt install ffmpeg portaudio19-dev
-```
 
 ### Windows
 
@@ -96,11 +64,6 @@ python -m venv venv
 ```
 
 #### Activate the Virtual Environment:
-**macOS/Linux:**
-```
-source venv/bin/activate
-```
-
 **Windows:**
 ```
 venv\Scripts\activate
@@ -109,19 +72,6 @@ venv\Scripts\activate
 #### Install Dependencies:
 ```
 pip install -r requirements.txt
-```
-
----
-
-### Using Conda
-#### Create a Conda Environment:
-```
-conda create --name myenv python=3.11
-```
-
-#### Activate the Conda Environment:
-```
-conda activate myenv
 ```
 
 #### Install Dependencies:
